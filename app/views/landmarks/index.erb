@@ -1,0 +1,15 @@
+<h2>Here's All the Landmarks: </h2>
+
+<% Landmark.all.each do |landmark| %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Year Completed</th>
+  </tr>
+  <tr>
+    <td><%= landmark.name %></td>
+    <td><%= landmark.year_completed %></td>
+  </tr>
+<table>
+  <% end %>
